@@ -1,8 +1,19 @@
 <template>
   <div id="app">
+    <app-toolbar />
     <router-view/>
   </div>
 </template>
+
+<script>
+import AppToolbar from '@/components/common/AppToolbar.vue';
+
+export default {
+  components: {
+    AppToolbar,
+  },
+};
+</script>
 
 <style lang="scss">
 * {
@@ -16,6 +27,7 @@ body {
   text-align: center;
   color: #2c3e50;
   margin: 0;
+  padding-top: 40px;
 }
 
 html, body {
